@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.switch {
+}
+
+.switch:checked + div > .image1 {
+    visibility: visible;
+}
+
+.image1 {
+    max-width: 99%;
+    max-height: 99%;
+    width: auto;
+    height: auto;
+    padding: 3px;
+    visibility: hidden;
+}
+
+div {
+    height: 22px;
+    width: 22px;
+}
+
+div div {
+    border: solid black 1.5px;
+    padding: 2px;
+}
+</style>
+</head>
+<body>
+
+<h1>Übung 2.2</h1>
+<input class="switch" type="checkbox" checked="checked">
+hide and show via checkbox
+<div>
+    <img class="image1" src="https://kaul.inf.h-brs.de/ccm/we/ws23/resources/assets/h-brs.jpg" alt="Hochschule Bonn-Rhein-Sieg">
+</div>
+
+</body>
+</html>

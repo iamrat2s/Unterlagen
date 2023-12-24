@@ -5,14 +5,34 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Warte, bis das Dokument vollständig geladen ist
+
+            // Finde den "Yes"-Button
+            var yesButton = document.getElementById('yes-btn');
+
+            // Füge einen Event-Listener hinzu, um auf den Klick des "Yes"-Buttons zu reagieren
+            yesButton.addEventListener('click', function() {
+                // Finde das Element mit der Klasse "container" und entferne es
+                var containerElement = document.querySelector('.container');
+                containerElement.remove();
+
+                // Zeige das Popup an (optional)
+                var popupElement = document.getElementById('popup');
+                popupElement.style.display = 'block';
+            });
+        });
+    </script>
+
     <div class="container">
         <h1>Do you love me?</h1>
         <img src="https://media1.tenor.com/m/WRaT95yNLkAAAAAd/sad-eyes-pretty-please.gif" alt=" " width="210" height="210"> 
         <div class="buttons">
             <button id="no-btn">No</button>
             <button id="yes-btn">Yes</button>
-           </div>
-        <div class="popup" id="popup">
+        </div>
+        <div class="popup" id="popup" style="display: none;">
             <p>Aww, thank you!</p>
             <img src="https://media.tenor.com/55-kH7JnV0cAAAAj/dubu.gif" alt=" " width="210" height="210"> 
         </div>

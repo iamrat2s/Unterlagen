@@ -5,8 +5,6 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-
     <div class="container">
         <h1>Do you love me?</h1>
         <img src="https://media1.tenor.com/m/WRaT95yNLkAAAAAd/sad-eyes-pretty-please.gif" alt=" " width="210" height="210"> 
@@ -14,11 +12,18 @@
             <button id="no-btn">No</button>
             <button id="yes-btn">Yes</button>
         </div>
-        <div class="popup" id="popup" style="display: none;">
+        <div class="popup" id="popup">
             <p>Aww, thank you!</p>
             <img src="https://media.tenor.com/55-kH7JnV0cAAAAj/dubu.gif" alt=" " width="210" height="210"> 
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('yes-btn').addEventListener('click', function() {
+            var container = document.querySelector('.container');
+            var imageToRemove = container.querySelector('img');
+            imageToRemove.remove();
+        });
+    </script>
 </body>
 </html>

@@ -1,42 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.switch {
-}
-
-.switch:checked + div > .image1 {
-    visibility: visible;
-}
-
-.image1 {
-    max-width: 99%;
-    max-height: 99%;
-    width: auto;
-    height: auto;
-    padding: 3px;
-    visibility: hidden;
-}
-
-div {
-    height: 22px;
-    width: 22px;
-}
-
-div div {
-    border: solid black 1.5px;
-    padding: 2px;
-}
-</style>
+    <title>Suprise...!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<h1>Übung 2.2</h1>
-<input class="switch" type="checkbox" checked="checked">
-hide and show via checkbox
-<div>
-    <img class="image1" src="https://kaul.inf.h-brs.de/ccm/we/ws23/resources/assets/h-brs.jpg" alt="Hochschule Bonn-Rhein-Sieg">
-</div>
-
+    <div class="container">
+        <h1>Will you come on a date with me?</h1>
+        <div class="buttons">
+            <button id="no-btn">No</button>
+            <button id="yes-btn">Yes</button>
+        </div>
+        <div class="popup" id="popup">
+            <p>Aww, thank you!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
